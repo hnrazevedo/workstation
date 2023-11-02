@@ -1,0 +1,16 @@
+---
+vs_extensions:
+- eamodio.gitlens
+- bbenoist.vagrant
+- bmewburn.vscode-intelephense-client
+- hashicorp.terraform
+- ms-azuretools.vscode-docker
+- MS-CEINTL.vscode-language-pack-pt-BR
+- ms-vscode-remote.remote-containers
+- onecentlin.laravel-blade
+- onecentlin.laravel5-snippets
+- RobbOwen.synthwave-vscode
+- vscode-icons-team.vscode-icons
+- zobo.php-intellisense
+- redhat.ansible
+- redhat.vscode-yaml

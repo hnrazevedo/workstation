@@ -1,0 +1,17 @@
+- name: Preparing Workstation
+  become: yes
+  hosts: localhost
+  connection: local
+  roles:
+    - linux_apps
+    - docker
+    - brave
+    - virtualbox
+    - hashicorp_apps
+
+- name: Configure user data
+  hosts: localhost
+  connection: local
+  roles:
+    - zsh
+    - vscode

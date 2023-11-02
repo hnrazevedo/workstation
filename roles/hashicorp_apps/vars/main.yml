@@ -1,0 +1,5 @@
+---
+hashicorp_apps:
+- terraform
+- vagrant
+- vault

@@ -1,0 +1,42 @@
+- name: Verify if Oh-My-zsh is installed
+  command: test -d /home/{{ ansible_user_id }}/.oh-my-zsh
+  register: ohmyzsh
+  ignore_errors: true
+
+- name: Installing Oh-My-zsh
+  shell:
+    cmd: 'curl -fsL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh | bash'
+    warn: false
+  when: ohmyzsh.rc != 0
+
+- name: Changing Default Shell to ZSH
+  user: 
+    name: '{{ ansible_user_id }}'
+    shell: /bin/zsh 
+
+- name: Changing Default ZSH Theme to Agnoster
+  lineinfile:
+    path: /home/{{ ansible_user_id }}/.zshrc
+    regexp: '^ZSH_THEME='
+    line: 'ZSH_THEME="agnoster"'
+
+- name: Creating ZSH Completion folder
+  file:
+    path: /home/{{ ansible_user_id }}/.oh-my-zsh/completions
+    state: directory
+    mode: 0755
+
+- name: Adding autoload to compinit
+  lineinfile:
+    path: /home/{{ ansible_user_id }}/.zshrc
+    line: 'autoload -U compinit && compinit'
+    state: present
+
+- name: Install powerlevel10k Theme
+  git:
+    repo: https://github.com/romkatv/powerlevel10k.git
+    dest: /home/{{ ansible_user_id }}/.oh-my-zsh/themes/powerlevel10k
+    update: no
+
+- name: Enable powerlevel10k Theme
+  command: sed -e 's#ZSH_THEME="agnoster"#ZSH_THEME="powerlevel10k/powerlevel10k"#g' -i /home/{{ ansible_user_id }}/.zshrc

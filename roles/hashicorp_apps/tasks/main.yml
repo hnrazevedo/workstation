@@ -1,0 +1,14 @@
+---
+- name: Add Hashicorp key
+  apt_key:
+    url: https://apt.releases.hashicorp.com/gpg
+    state: present
+
+- name: Add Hashicorp repository
+  apt_repository:
+    repo: deb https://apt.releases.hashicorp.com bookworm main
+
+- name: Install Hashicorp Apps
+  apt:
+    name: "{{ item }}"
+  loop: "{{ hashicorp_apps }}"

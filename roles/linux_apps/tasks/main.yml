@@ -1,0 +1,14 @@
+---
+- name: Installing Linux Apps
+  become: true
+  apt:
+    name: '{{ item }}'
+    install_recommends: yes
+    state: present
+  loop: "{{ linux_apps }}"
+
+- name: Install deb package from source
+  apt:
+    deb: '{{ item }}'
+    state: present
+  loop: "{{ deb_packages }}"
