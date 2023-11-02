@@ -14,7 +14,7 @@
     
 - name: Criar um atalho para o Tor Browser
   lineinfile:
-    dest: "{{ ansible_env.HOME }}/.bashrc"
+    dest: "{{ ansible_env.HOME }}/.zshrc"
     line: 'alias tor="sh -c {{ ansible_env.HOME }}/tor-browser/Browser/start-tor-browser --detach"'
     state: present
     create: yes
