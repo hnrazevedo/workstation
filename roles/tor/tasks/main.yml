@@ -1,16 +1,24 @@
 ---
 - name: Download tor browser
   become: true
-  command: "{{ item }}"
-  loop:
-    - 'curl https://dist.torproject.org/torbrowser/13.0.1/tor-browser-linux-x86_64-13.0.1.tar.xz -o /tmp/tor-browser-linux-x86_64-13.0.1.tar.xz'
-    - 'tar -xJf /tmp/tor-browser-linux-x86_64-13.0.1.tar.xz -C /usr/local/bin/'
-    - 'chmod 777 -R /usr/local/bin/tor-browser'
-    - 'rm -rf /tmp/tor-browser-linux-x86_64-13.0.1.tar.xz'
-  
-- name: Configure alias for Tor
-  lineinfile: 
-    dest: "~/.bashrc"  
-    line: "alias tor=\"sh -c '\"/usr/local/bin/tor-browser/Browser/start-tor-browser\" --detach || ([ !  -x \"/usr/local/bin/tor-browser/Browser/start-tor-browser\" ] && \"$(dirname \"$*\")\"/Browser/start-tor-browser --detach)' dummy %k\""
+  get_url: 
+    url: "https://dist.torproject.org/torbrowser/13.0.1/tor-browser-linux-x86_64-13.0.1.tar.xz"
+    dest: /tmp/tor-browser.tar.xz
+    mode: 0777
+
+- name: Descompactar o arquivo
+  unarchive:
+    src: /tmp/tor-browser.tar.xz
+    dest: "{{ ansible_env.HOME }}/"
+    remote_src: yes
+    
+- name: Criar um atalho para o Tor Browser
+  lineinfile:
+    dest: "{{ ansible_env.HOME }}/.bashrc"
+    line: 'alias tor="sh -c {{ ansible_env.HOME }}/tor-browser/Browser/start-tor-browser --detach"'
     state: present
-    create: yes 
+    create: yes
+
+- name: Reload Bash Configuration
+  command: source ~/.zshrc
+  ignore_errors: true
