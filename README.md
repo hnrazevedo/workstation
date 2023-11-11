@@ -66,6 +66,17 @@ ansible-pull -U https://github.com/hnrazevedo/workstation.git site.yml
       <img src="https://www.vectorlogo.zone/logos/virtualbox/virtualbox-icon.svg" width="75px;" height="75px;" alt="VirtualBox" /><br /><b>VirtualBox</b>
     </td>
   </tr>
+  <tr>
+    <td align="center">
+      <img src="https://www.vectorlogo.zone/logos/nvidia/nvidia-icon.svg" width="75px;" height="75px;" alt="Nvidia Driver" /><br /><b>Nvidia Driver</b>
+    </td>
+    <td align="center">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Scalable_gparted.svg" width="75px;" height="75px;" alt="Gparted" /><br /><b>Gparted</b>
+    </td>
+    <td align="center">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Windows_Terminal_logo.svg" width="75px;" height="75px;" alt="Konsole" /><br /><b>Konsole</b>
+    </td>
+  </tr>
 </table>
 
 
