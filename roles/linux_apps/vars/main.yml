@@ -10,6 +10,7 @@ linux_apps:
 - apt-transport-https
 - flameshot
 - peek
+- zsh
 
 deb_packages:
 - https://github.com/Kong/insomnia/releases/download/core%408.3.0/Insomnia.Core-8.3.0.deb
