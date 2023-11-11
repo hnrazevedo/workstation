@@ -5,7 +5,7 @@ Default configuration for my workstation with ansible
 
 1. Install Ansible
 ```bash
-sudo apt update && sudo apt install ansible -y
+sudo apt update && sudo apt install git ansible -y
 ```
 
 2. Apply the configuration
