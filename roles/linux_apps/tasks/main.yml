@@ -1,4 +1,8 @@
 ---
+- name: Add non-free repository
+  apt_repository:
+    repo: deb http://deb.debian.org/debian/ bookworm main contrib non-free non-free-firmware
+
 - name: Installing Linux Apps
   become: true
   apt:

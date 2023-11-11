@@ -11,6 +11,11 @@ linux_apps:
 - flameshot
 - peek
 - zsh
+- gparted
+- nvidia-driver 
+- firmware-misc-nonfree
+- nvidia-detect
+- jq
 
 deb_packages:
 - https://github.com/Kong/insomnia/releases/download/core%408.3.0/Insomnia.Core-8.3.0.deb
