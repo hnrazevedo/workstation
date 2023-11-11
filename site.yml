@@ -13,6 +13,6 @@
   hosts: localhost
   connection: local
   roles:
-    - tor
     - zsh
+    - tor
     - vscode
