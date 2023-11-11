@@ -9,7 +9,8 @@
   when: ohmyzsh.rc != 0
 
 - name: Changing Default Shell to ZSH
-  user: 
+  become: true
+  user:
     name: '{{ ansible_user_id }}'
     shell: /bin/zsh 
 
