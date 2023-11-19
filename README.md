@@ -76,6 +76,12 @@ ansible-pull -U https://github.com/hnrazevedo/workstation.git site.yml
     <td align="center">
       <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Windows_Terminal_logo.svg" width="75px;" height="75px;" alt="Konsole" /><br /><b>Konsole</b>
     </td>
+    <td align="center">
+      <img src="https://www.shotcut.org/assets/img/media/shotcut-logo-512x512.png" width="75px;" height="75px;" alt="Shotcut" /><br /><b>Shotcut</b>
+    </td>
+    <td align="center">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/OBS_Studio_Logo.svg" width="75px;" height="75px;" alt="OBS Studio" /><br /><b>OBS Studio</b>
+    </td>
   </tr>
 </table>
 
