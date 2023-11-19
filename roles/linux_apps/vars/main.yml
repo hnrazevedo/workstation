@@ -24,3 +24,4 @@ deb_packages:
 - https://github.com/Kong/insomnia/releases/download/core%408.3.0/Insomnia.Core-8.3.0.deb
 - https://github.com/antares-sql/antares/releases/download/v0.7.19/Antares-0.7.19-linux_amd64.deb
 - https://github.com/Ulauncher/Ulauncher/releases/download/v6.0.0-beta2/ulauncher_6.0.0-beta2_all.deb
+- https://download.teamviewer.com/download/linux/teamviewer_amd64.deb
