@@ -31,11 +31,11 @@ ansible-pull -U https://github.com/hnrazevedo/workstation.git site.yml
     <td align="center">
       <img src="https://raw.githubusercontent.com/phw/peek/main/data/icons/com.uploadedlobster.peek.svg" width="75px;" height="75px;" alt="Peek" /><br /><b>Peek</b>
     </td>
-  </tr>
-  <tr>
     <td align="center">
       <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" width="75px;" height="75px;" alt="Git" /><br /><b>Git</b>
     </td>
+  </tr>
+  <tr>
     <td align="center">
       <img src="https://cdn.pixabay.com/photo/2022/05/03/17/44/zsh-7172337_960_720.png" width="75px;" height="75px;" alt="ZSH" /><br /><b>ZSH</b>
     </td>
@@ -48,14 +48,14 @@ ansible-pull -U https://github.com/hnrazevedo/workstation.git site.yml
     <td align="center">
       <img src="https://www.vectorlogo.zone/logos/visualstudio_code/visualstudio_code-icon.svg" width="75px;" height="75px;" alt="Visual Studio Code" /><br /><b>Visual Studio Code</b>
     </td>
-  </tr>
-  <tr>
     <td align="center">
       <img src="https://www.vectorlogo.zone/logos/terraformio/terraformio-icon.svg" width="75px;" height="75px;" alt="Terraform" /><br /><b>Terraform</b>
     </td>
     <td align="center">
       <img src="https://www.vectorlogo.zone/logos/vagrantup/vagrantup-icon.svg" width="75px;" height="75px;" alt="Vagrant" /><br /><b>Vagrant</b>
     </td>
+  </tr>
+  <tr>
     <td align="center">
       <img src="https://www.vectorlogo.zone/logos/vaultproject/vaultproject-icon.svg" width="75px;" height="75px;" alt="Vault" /><br /><b>Vault</b>
     </td>
@@ -65,8 +65,6 @@ ansible-pull -U https://github.com/hnrazevedo/workstation.git site.yml
     <td align="center">
       <img src="https://www.vectorlogo.zone/logos/virtualbox/virtualbox-icon.svg" width="75px;" height="75px;" alt="VirtualBox" /><br /><b>VirtualBox</b>
     </td>
-  </tr>
-  <tr>
     <td align="center">
       <img src="https://www.vectorlogo.zone/logos/nvidia/nvidia-icon.svg" width="75px;" height="75px;" alt="Nvidia Driver" /><br /><b>Nvidia Driver</b>
     </td>
@@ -76,15 +74,19 @@ ansible-pull -U https://github.com/hnrazevedo/workstation.git site.yml
     <td align="center">
       <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Windows_Terminal_logo.svg" width="75px;" height="75px;" alt="Konsole" /><br /><b>Konsole</b>
     </td>
+  </tr>
+  <tr>
     <td align="center">
       <img src="https://www.shotcut.org/assets/img/media/shotcut-logo-512x512.png" width="75px;" height="75px;" alt="Shotcut" /><br /><b>Shotcut</b>
     </td>
     <td align="center">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/OBS_Studio_Logo.svg" width="75px;" height="75px;" alt="OBS Studio" /><br /><b>OBS Studio</b>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/OBS_Studio_Logo.svg" width="75px;" height="75px" alt="OBS Studio" /><br /><b>OBS Studio</b>
+    </td>
+    <td align="center">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/TeamViewer_Logo_Icon_Only.svg" width="75px;" height="75px" alt="TeamViewer" /><br /><b>TeamViewer</b>
     </td>
   </tr>
 </table>
-
 
 # License
 GPLv3
